@@ -71,4 +71,4 @@ Set this variable when configuring the project. If an invalid library is specifi
    }
    ```
 
-The syntax is very simmilar to known JSON libraries. Take a look at `value.hpp` to find all the functionalities.
+The syntax is very simmilar to known JSON libraries. Take a look at `value.hpp` to find all the functionalities. For a complete example, take a look at [Pokedex](https://github.com/Froncu/Pokedex).
