@@ -81,6 +81,21 @@ namespace fro
       return implementation_->get_native_value().get<int>();
    }
 
+   float value::as_float() const
+   {
+      return implementation_->get_native_value().get<float>();
+   }
+
+   double value::as_double() const
+   {
+      return implementation_->get_native_value().get<double>();
+   }
+
+   bool value::as_bool() const
+   {
+      return implementation_->get_native_value().get<bool>();
+   }
+
    std::string_view value::as_string_view() const
    {
       return implementation_->get_native_value().get<std::string_view>();

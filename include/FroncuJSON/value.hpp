@@ -33,6 +33,9 @@ namespace fro
          [[nodiscard]] std::size_t size() const;
 
          [[nodiscard]] int as_int() const;
+         [[nodiscard]] float as_float() const;
+         [[nodiscard]] double as_double() const;
+         [[nodiscard]] bool as_bool() const;
          [[nodiscard]] std::string_view as_string_view() const;
          [[nodiscard]] std::string as_string() const;
 
