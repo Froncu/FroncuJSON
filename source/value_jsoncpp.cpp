@@ -100,6 +100,11 @@ namespace fro
 
    bool value::as_bool() const
    {
+      // NOTE: nlohmann throws an exception when the value retrieved as bool is not a bool
+      Json::Value const& value{ implementation_->get_native_value() };
+      if (not value.isBool())
+         throw std::runtime_error("value requested as bool, but is of a different type.");
+
       return implementation_->get_native_value().asBool();
    }
 
