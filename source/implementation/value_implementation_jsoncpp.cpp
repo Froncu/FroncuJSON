@@ -1,6 +1,6 @@
 #include "value_implementation_jsoncpp.hpp"
 
-namespace jsn
+namespace fro
 {
    Json::Value& value::implementation::get_native_value()
    {

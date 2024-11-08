@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 
-namespace jsn
+namespace fro
 {
    class value final
    {
@@ -47,14 +47,14 @@ namespace jsn
 }
 
 template<>
-struct std::formatter<jsn::value> : private std::formatter<std::string>
+struct std::formatter<fro::value> : private std::formatter<std::string>
 {
    static constexpr auto parse(std::format_parse_context const& context)
    {
       return context.begin();
    }
 
-   auto format(jsn::value const& value, std::format_context& context) const
+   auto format(fro::value const& value, std::format_context& context) const
    {
       std::ostringstream string_stream{};
       string_stream << value;

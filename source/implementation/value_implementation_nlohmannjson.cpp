@@ -1,6 +1,6 @@
 #include "value_implementation_nlohmannjson.hpp"
 
-namespace jsn
+namespace fro
 {
    nlohmann::json& value::implementation::get_native_value()
    {

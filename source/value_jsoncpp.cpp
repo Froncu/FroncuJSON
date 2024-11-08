@@ -3,7 +3,7 @@
 #include <format>
 #include <fstream>
 
-namespace jsn
+namespace fro
 {
    Json::Value parse(std::string_view const json_path)
    {
@@ -107,7 +107,7 @@ namespace jsn
       if (value.empty())
          return {};
 
-      std::vector<jsn::value> children;
+      std::vector<fro::value> children;
       children.reserve(value.size());
 
       for (Json::Value& native_child : value)
@@ -116,7 +116,7 @@ namespace jsn
          // the constructor that takes a std::unique_ptr<implementation> to be public,
          // what I don't want.
 
-         jsn::value member{ std::make_unique<implementation>(&native_child) };
+         fro::value member{ std::make_unique<implementation>(&native_child) };
          children.push_back(std::move(member));
       }
 
