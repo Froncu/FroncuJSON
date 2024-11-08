@@ -13,7 +13,7 @@
 
 FroncuJSON uses CMake's `FetchContent` module to download and manage the selected JSON library as part of the build process. When you specify the `FRO_NATIVE_LIBRARY` variable, CMake automatically fetches the appropriate dependency. There is no need to manually install or link these dependencies, as CMake handles everything required to integrate the selected JSON library with FroncuJSON.
 
-## Configuration and Build
+## Configuration and Usage
 
 ### Prerequisites
 
