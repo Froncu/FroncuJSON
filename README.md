@@ -24,8 +24,8 @@ FroncuJSON uses CMake's `FetchContent` module to download and manage the selecte
 
 You can select the JSON parsing library that FroncuJSON will use by setting the `FRO_NATIVE_LIBRARY` CMake variable:
 
-- `FRO_NATIVE_LIBRARY=nlohmannjson` (default): Uses nlohmann::json.
-- `FRO_NATIVE_LIBRARY=jsoncpp`: Uses jsoncpp.
+- `-DFRO_NATIVE_LIBRARY=nlohmannjson` (default): Uses nlohmann::json.
+- `-DFRO_NATIVE_LIBRARY=jsoncpp`: Uses jsoncpp.
 
 Set this variable when configuring the project. If an invalid library is specified, CMake will raise an error and list the valid options.
 
